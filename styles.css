@@ -588,6 +588,73 @@ nav li a {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    #why-trust-us {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .circle {
+        margin-top: 2rem;
+    }
+
+    .circle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .circle-container-one {
+        position: static;
+    }
+
+    .circle-container-two {
+        display: flex;
+        top: 32%;
+        flex-wrap: wrap;
+        position: static;
+    }
+
+    .circle-container-three {
+        margin-top: 0;
+        position: static;
+    }
+}
+
+@media only screen and (481px <= width <= 888px) {
+    #why-trust-us {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .circle {
+        margin-top: 2rem;
+    }
+
+    .circle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    .circle-container-one {
+        position: static;
+    }
+
+    .circle-container-two {
+        flex-wrap: wrap;
+        position: static;
+    }
+
+    .circle-container-three {
+        margin-top: 0;
+        position: static;
+    }
+}
+
+
 /* quote section */ 
 .quotes {
     width: 100%;
@@ -744,6 +811,16 @@ nav li a {
 
     .author {
         display: flex;
+    }
+}
+
+@media only screen and (889px <= width <= 1023px) {
+    .left-arrow img {
+        display: none;
+    }
+
+    .right-arrow img {
+        display: none;
     }
 }
 
@@ -1073,10 +1150,9 @@ p.economy {
     }   
 }
 
-@media only screen and (889px <= width <= 1023px) {
+@media only screen and (769px <= width <= 1023px) {
     .offer-container {
         max-width: 100%;
-        border: 1px solid black;
     }
 
     .offer-container p {
@@ -1101,20 +1177,28 @@ p.economy {
     .sample-books p {
         width: 90%;
         align-self: center;
+        font-size: 1.2em;
     }
 
     .themes {
-        width: min-content;
+        width: 100%;
         align-self: center;
-    }
-
-    .outer-theme-card {
-        margin-bottom: 2rem;
+        justify-content: space-around;
     }
 
     .outer-theme-card p {
-        margin-top: 0.6rem;
-    }   
+        font-size: 0.9em;
+    }
+    
+    .theme-card {
+        width: 110px;
+        height: 110px;
+    }
+
+    .theme-card img {
+        max-width: 100%;
+        height: 50px;
+    }
 }
 
 /* Democracy pack section */
@@ -1290,6 +1374,69 @@ p.economy {
     
     .book-one img {
         max-width: 100%;
+        height: 150px;
+    }
+
+    .book-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .book-two img {
+        max-width: 100%;
+        height: 150px;
+    }
+
+    .teacher-container {
+        max-width: 100%;
+    }
+    
+    .teacher-container p {
+        margin-top: 2rem;
+        font-size: 1.2em;
+        margin-bottom: 1.5rem;
+    }
+    
+    .teacher-container img {
+        height: 350px;
+    }
+}
+
+@media only screen and (769px <= width <= 1023px) {
+    #product {
+        border: 1px solid black;
+        margin-top: 0rem;
+    }
+
+    #product h2 {
+        margin-top: 0rem;
+    }
+    
+    .books-container {
+        display: flex;
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .book-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .books-container p {
+        font-weight: 500;
+        width: fit-content;
+        margin-bottom: 1rem;
+    }
+    
+    .book-one img {
+        max-width: 100%;
         height: 225px;
     }
 
@@ -1319,9 +1466,8 @@ p.economy {
     .teacher-container img {
         height: 350px;
     }
+
 }
-
-
 
 /* Project pilot section */
 .project-pilot {
@@ -1410,19 +1556,17 @@ p.economy {
     }
 }
 
-@media only screen and (481px <= width <= 768px) {
+@media only screen and (481px <= width <= 888px) {
     .project-pilot {
         height: 700px;
     }
 
     .circle-pilot-one {
-        margin-bottom: 1rem;
-        left: -25px;
+        position: static;
     }
     
     .circle-pilot-two {
-        margin-bottom: 3rem;
-        right: -25px;
+        position: static;
     }
 
     .project-pilot h2 {
@@ -1430,6 +1574,29 @@ p.economy {
         margin-top: 2rem;
         font-weight: bold;
         margin-bottom: 0.5rem;
+    }
+}
+
+@media only screen and (889px <= width <= 1023px) {
+    .project-pilot {
+        height: 800px;
+    }
+
+    .circle-pilot-one {
+        margin-bottom: 1rem;
+        left: -150px;
+    }
+    
+    .circle-pilot-two {
+        margin-bottom: 3rem;
+        right: -100px;
+    }
+
+    .project-pilot h2 {
+        font-size: 2.5em;
+        margin-top: 2rem;
+        font-weight: bold;
+        margin-bottom: 0;
     }
 }
 
