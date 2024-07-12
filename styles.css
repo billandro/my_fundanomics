@@ -1558,7 +1558,7 @@ p.economy {
 
 @media only screen and (481px <= width <= 888px) {
     .project-pilot {
-        height: 700px;
+        height: fit-content;
     }
 
     .circle-pilot-one {
