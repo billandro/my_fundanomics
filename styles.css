@@ -665,9 +665,12 @@ nav li a {
 
 .quote-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 90%;
+    border-top: 1px solid;
+    /*box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);*/
+    margin: 1.5rem 0px;
 }
 
 .left-arrow img {
@@ -716,6 +719,20 @@ nav li a {
     height: 9rem;
 }
 
+@media only screen and (max-width: 425px) {
+    .quote .quote-text {
+        max-width: 80%;
+        margin-top: 2rem;
+        align-self: center
+    }
+
+    .quote {
+        width: 100%;
+        font-size: 1em;
+        margin-top: 2rem;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .quotes {
         max-width: 100%;
@@ -730,6 +747,7 @@ nav li a {
         min-height: 400px;
         align-items: start;
         box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+        border-top: none;
     }
 
     .quote {
@@ -779,7 +797,7 @@ nav li a {
         height: fit-content;
         box-shadow: none;
         margin-top: 1rem;
-        margin-bottom: 3.5rem;
+        margin-bottom: 1rem;
     }
 
     .quote-container {
@@ -1699,6 +1717,13 @@ input::placeholder {
     font-weight: bold;
     margin-bottom: 1rem;
 }
+
+/*.mail-and-call {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}*/
 
 .phone {
     display: flex;
